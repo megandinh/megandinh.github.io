@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/cg3wev_dinh_hw6.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+			<script>
+			/*
+			 * Defining Table
+			 * Minimum Bootstrap styling requirements: Jumbotron, alert, btn
+			 * Input: Total number of wedding guests, number of tables in the venue
+			 * Processing: Calculate the number of guests at each table.
+			 * Output: The guests at the tables should be balanced.
+					   Output a phrase that tells the wedding coordinator
+					   how many seats to set for each table.
+					   List the larger tables first.
+			*/
+				
+			function guestsToTable () {
+			// Read the input of the number of guests and tables from the user.
+				var guests = document.getElementById('guestsInputBox').value;
+				var tables = document.getElementById('tablesInputBox').value;
+				
+			// Convert what the user typed from text into a number.
+				var g = parseFloat(guests);
+				var t = parseFloat(tables);
+				
+			// Calculate number of guests distributed into each table
+				var z = (g/t);
+				var x = (g%t);
+
+			// Write statements of how many tables hold how many guests depending on remainders using if statement.
+				if (x == 0){
+				document.getElementById('calculate').innerHTML = "There will be " + t + " tables with " + z + " guests.";
+				} else {
+				var y = Math.floor(z);
+				var a = (y + 1);
+				var b = (t - x);
+				document.getElementById('calculate').innerHTML = "There will be " + x + " tables with " + a + " guests and "
+				+ b + " tables with " + y + " guests."
+				}
+			};
+			</script>
+		</head>
+		<body>
+			<div class="container">
+			<div class="jumbotron text-center">
+				<h2>Wedding Banquet Table Planner App</h2>
+			</div>
+			
+			<div class="media border p-3">
+					<div class="media-body">
+						<p>Input the number of guests and the number of tables you are going to use.
+						<br>Number of guests:
+						<input type="text" id="guestsInputBox">
+						<br>
+						<br>Number of tables:
+						<input type="text" id="tablesInputBox">
+						<br>
+						<br>
+						<button type="button" class="btn btn-primary custom-btn" onclick="guestsToTable();">Return Answer!</button>
+						</p>
+						
+						<p><span id="calculate"></span></p>
+					</div>
+			</div>
+			
+			</div>
+			
+			<nav class="navbar fixed-bottom navbar-light bg-light">
+				<div class="small">Megan Dinh &copy; 2019 Fixed Bottom Footer.</div>
+			</nav>
+		</body>
+	</html>
+	

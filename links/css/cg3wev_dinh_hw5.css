@@ -1,0 +1,19 @@
+.jumbotron {
+	background-color: #B0C4DE;
+	font-family: Georgia, serif;
+	color: #FFFAFA;
+	font-size: 22px;
+	letter-spacing: 3px;
+}
+h3 {
+	font-family: Georgia, serif;
+	letter-spacing: -1px;
+
+}
+p {
+	font-family: Georgia, serif;
+}
+
+.container {
+	margin-bottom: 50px;
+}

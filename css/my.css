@@ -1,0 +1,68 @@
+a{
+	color: #DAA520;
+}
+h1 {
+	font-size: 7vw;
+	letter-spacing: -2px;
+	color: #DAA520;
+	font-family: 'Montserrat', sans-serif;
+}
+h4 {
+	font-weight: bold;
+	font-family: 'Montserrat', sans-serif;
+	
+}
+.btn.btn-warning {
+	color: white;
+}
+
+.portrait {
+	float: right;
+}
+.bold {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: bold;
+	font-size: 30px;
+
+}
+p {
+	color: ;
+	font-family: 'Montserrat', sans-serif;
+}
+.navbars {
+	font-family: 'Julius Sans One', sans-serif;
+}
+
+footer {
+	text-align: right;
+	padding: 10px;
+	background-color: #F5F5F5;
+	margin-top: 50px;
+}
+
+.card-tag {
+	color: #DAA520;
+	font-weight: bold;
+}
+
+#doodle{
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+#doodleb{
+  object-fit: cover;
+  width: 280px;
+  height: 280px;
+}
+.responsive{
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}

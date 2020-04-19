@@ -1,0 +1,27 @@
+.jumbotron {
+	background-color: #E6E6FA;
+	font-family: Georgia, serif;
+	color: #FFFAFA;
+	font-size: 22px;
+	letter-spacing: 3px;
+}
+
+.media-body {
+	font-family: Georgia, serif;
+	background-color: #F8F8FF;
+	color: #9370DB;
+
+}
+
+.btn-primary.custom-btn {
+	background-color: #9370DB;
+	border-color: #9370DB;
+}
+
+p {
+	font-family: Georgia, serif;
+}
+
+.container {
+	margin-bottom: 50px;
+}

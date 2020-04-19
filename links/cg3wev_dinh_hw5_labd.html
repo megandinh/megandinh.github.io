@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+	<html lang="en-us">
+		<head>
+			<title>Megan Dinh - CG3WEV - LabD - First JavaScript Program</title>
+			<meta charset="utf-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+			<link rel="stylesheet" href="css/cg3wev_dinh_hw5.css">
+			<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+			<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+			<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
+			<script>
+			/*
+			 * Defining Table
+			 * Use Bootstrap sytling: jumbotron, container, media, border, media-body, progress, progress-bar, bg-info, bg-danger		 
+			 * Input: A temperature in Fahrenheit
+			 * Processing: Convert the Fahrenheit temperature to Celcius
+			 * Output: Temperature is converted to Celcius.
+			*/
+			
+			function fahrToCels () {
+			// Read a Fahrenheit temperature from the user.
+				var text = document.getElementById('fahrenInputBox').value;
+				
+			// Convert what the user typed from text into a number.
+				var f = parseFloat(text);
+				
+			// Convert the Fahrenheit temperature into Celcius
+				var c = (5 / 9) * (f - 32);
+				
+			// Display the Fahrenheit and C temperatures to the user using progress bar Bootstrap 4 style.
+				document.getElementById('fahrenheitValue').innerHTML = f;
+				document.getElementById('fahrenheitVal').innerHTML = Math.round(f);
+				document.getElementById('fahrenheitVal').style.width = f + "%";
+				
+				document.getElementById('celciusValue').innerHTML = c;
+				document.getElementById('celciusDiv').innerHTML = Math.round(c);
+				document.getElementById('celciusDiv').style.width= c + "%";
+			
+			}			
+			function celcToFar () {
+			// Read a Celcius temperature from the user.
+				var text = document.getElementById('celcInputBox').value;
+				
+			// Convert what the user typed from text into a number.
+				var c = parseFloat(text);
+				
+			// Convert the Celcius temperature into Fahrenheit
+				var f = (c * 9 / 5) + 32;
+				
+			// Display the Celcius and F temperatures to the user using progress bar Bootstrap 4 style.
+				document.getElementById('celcValue').innerHTML = c;
+				document.getElementById('celcVal').innerHTML = Math.round(c);
+				document.getElementById('celcVal').style.width = c + "%";
+				
+				document.getElementById('fahrValue').innerHTML = f;
+				document.getElementById('fahrDiv').innerHTML = Math.round(f);
+				document.getElementById('fahrDiv').style.width= f + "%";
+
+			}
+			</script>
+		</head>
+		<body>
+			<div class="jumbotron text-center">
+				<h2>Here is your personal temperature converter!</h2>
+			</div>
+			<div class="container">
+				<h3>Fahrenheit to Celcius</h3>
+				<p>Please enter a temperature in Fahrenheit:
+					<input type="text" id="fahrenInputBox"> <br>
+					and then click on the button. <br>
+					<button type="button" class="btn btn-primary" onclick="fahrToCels();">Convert F to C</button>
+				</p>
+				
+				<div class="media border p-3">
+					<div class="media-body">
+						<p><span id="fahrenheitValue"></span> degrees in Fahrenheit:</p>
+						<div class="progress">
+							<div class="progress-bar bg-primary" id="fahrenheitVal"></div>
+						</div><br>
+						<p>Converts to <span id="celciusValue"></span> degrees in Celcius:</p>
+						<div class="progress">
+							<div class="progress-bar bg-danger" id="celciusDiv"></div>
+						</div>
+					</div>
+				</div>
+				<br>
+				
+				<h3>Celcius to Fahrenheit</h3>
+				<p>Please enter a temperature in Celcius:
+					<input type="text" id="celcInputBox"> <br>
+					and then click on the button. <br>
+					<button type="button" class="btn btn-primary" onclick="celcToFar();">Convert C to F</button>
+				</p>
+				
+				<div class="media border p-3">
+					<div class="media-body">
+						<p><span id="celcValue"></span> degrees in Celcius:</p>
+						<div class="progress">
+							<div class="progress-bar bg-primary" id="celcVal"></div>
+						</div><br>
+						<p>Converts to <span id="fahrValue"></span> degrees in Fahrenheit:</p>
+						<div class="progress">
+							<div class="progress-bar bg-danger" id="fahrDiv"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<nav class="navbar fixed-bottom navbar-light bg-light">
+				<div class="small">Megan Dinh &copy; Fixed bottom footer.</div>
+			</nav>
+		</body>
+	</html>
