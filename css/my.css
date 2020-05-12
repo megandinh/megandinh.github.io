@@ -1,10 +1,16 @@
+*{
+  font-family:'Montserrat', sans-serif;
+}
 a{
-	color: #DAA520;
+	color: #FFFFFF;
+}
+.lead{
+  font-size: 3vw;
 }
 h1 {
 	font-size: 7vw;
 	letter-spacing: -2px;
-	color: #DAA520;
+	color: #a893bd;
 	font-family: 'Montserrat', sans-serif;
 }
 h4 {
@@ -29,16 +35,22 @@ p {
 	color: ;
 	font-family: 'Montserrat', sans-serif;
 }
+.navbar-brand{
+    /*font-family: 'Gochi Hand', cursive;*/
+    /*font-family: 'Nanum Pen Script', cursive;*/
+    font-family: 'Gamja Flower', cursive;
+    font-size: 40px;
+}
 .navbars {
-	font-family: 'Julius Sans One', sans-serif;
-	padding-top: 10px;
+  padding-top: 10px;
 }
 
 footer {
 	text-align: left;
 	text-indent: 20px;
 	padding: 10px;
-	background-color: #F5F5F5;
+  color: white;
+	background-color: #a893bd;
 	margin-top: 50px;
 }
 
@@ -83,7 +95,8 @@ footer {
   transition: 0.3s;
   width: 100%;
   max-width:450px;
-  height: auto
+  height: auto;
+  max-height: 450px;
   border-radius: 5px;
 }
 
@@ -106,6 +119,43 @@ img {
         text-align: center;
     }
 }
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #757257;
+
+}
+#project1{
+  background-color: #8adb7f;
+}
+#project2{
+   background-color: #757257;
+}
+
+
+.card:hover .overlay {
+  opacity: 1;
+}
+.text {
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 /*@media (min-width: 992px) {
     .card-columns {
