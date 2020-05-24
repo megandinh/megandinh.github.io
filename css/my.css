@@ -4,13 +4,17 @@
 a{
 	color: #FFFFFF;
 }
+a #alink {
+  color: black;
+}
+}
 .lead{
   font-size: 3vw;
 }
 h1 {
 	font-size: 7vw;
 	letter-spacing: -2px;
-	color: #a893bd;
+	/*color: #a893bd;*/
 	font-family: 'Montserrat', sans-serif;
 }
 h4 {
@@ -38,11 +42,15 @@ p {
 .navbar-brand{
     /*font-family: 'Gochi Hand', cursive;*/
     /*font-family: 'Nanum Pen Script', cursive;*/
-    font-family: 'Gamja Flower', cursive;
+    /*font-family: 'Gamja Flower', cursive;*/
+    font-family: 'Allura', cursive;
     font-size: 40px;
 }
 .navbars {
   padding-top: 10px;
+}
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer {
@@ -52,13 +60,23 @@ footer {
   color: white;
 	background-color: #a893bd;
 	margin-top: 50px;
+  font-family:'Montserrat', sans-serif;
+}
+footer a{
+    font-family:'Montserrat', sans-serif;
 }
 
 .card-tag {
 	color: #DAA520;
 	font-weight: bold;
 }
-
+.wraps{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.wraps p,b,span, a, li, dd{
+    font-family: 'Judson', serif;
+}
 #doodle{
   object-fit: cover;
   width: 280px;
@@ -72,7 +90,7 @@ footer {
 }
 .responsive{
   width: 100%;
-  max-width: 500px;
+  max-width: 800px;
   height: auto;
 }
 .center{
@@ -156,7 +174,17 @@ img {
   text-align: center;
 }
 
+.column {
+  float: left;
+  width: 50%;
+  padding: 5px;
+}
 
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
 /*@media (min-width: 992px) {
     .card-columns {
         column-count: 3;
