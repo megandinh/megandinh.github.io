@@ -12,7 +12,7 @@ a #alink {
   font-size: 3vw;
 }
 h1 {
-	font-size: 7vw;
+	/*font-size: 7vw;*/
 	letter-spacing: -2px;
 	/*color: #a893bd;*/
 	font-family: 'Montserrat', sans-serif;
@@ -42,8 +42,8 @@ p {
 .navbar-brand{
     /*font-family: 'Gochi Hand', cursive;*/
     /*font-family: 'Nanum Pen Script', cursive;*/
-    /*font-family: 'Gamja Flower', cursive;*/
-    font-family: 'Allura', cursive;
+    font-family: 'Gamja Flower', cursive;
+    /*font-family: 'Allura', cursive;*/
     font-size: 40px;
 }
 .navbars {
