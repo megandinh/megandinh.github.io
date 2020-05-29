@@ -203,7 +203,7 @@ img {
       left:0;
       z-index: 1;
     }
-    .one1{
+    .dot.one1{
       position:absolute;
       top: -30px;
       right:120px;
@@ -215,7 +215,7 @@ img {
       left:0;
       z-index: 1;
     }
-    .two2{
+    .dot.two2{
       position:absolute;
       top: -30px;
       right:120px;
