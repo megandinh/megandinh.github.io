@@ -56,8 +56,8 @@ a:link{
     width: 100%;
 }
 .dot {
-  height: 50px;
-  width: 50px;
+  height: 60px;
+  width: 60px;
   background-color: #a893bd;
   border-radius: 50%;
   display: inline-block;
@@ -98,19 +98,6 @@ p {
 }
 .nav-link{
     font-family: 'Montserrat', sans-serif;
-}
-
-footer {
-	text-align: left;
-	text-indent: 20px;
-	padding: 10px;
-  color: white;
-	background-color: #a893bd;
-	margin-top: 50px;
-  font-family:'Montserrat', sans-serif;
-}
-footer a{
-    font-family:'Montserrat', sans-serif;
 }
 
 .card-tag {
@@ -159,7 +146,7 @@ footer a{
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
   width: 100%;
-  max-width:450px;
+  max-width: 450px;
   height: auto;
   max-height: 450px;
   border-radius: 5px;
@@ -175,12 +162,64 @@ img {
   .container, .bodytext{
   padding-left: 10%;
   padding-right: 10%;
+  }  
+  .card{
+      margin:30px;
+  }
+  .one{
+    position: relative;
+    top:0;
+    left:0;
+    z-index: 1;
+  }
+  .one1{
+    position:absolute;
+    top: -30px;
+    right:100px;
+    z-index: 2;
+  }
+  .two{
+    position: relative;
+    top:0;
+    left:0;
+    z-index: 1;
+  }
+  .two2{
+    position:absolute;
+    top: -30px;
+    right:100px;
+    z-index: 2;
+  }
+
 }
-}
-@media (min-width: 576px) {
+@media (min-width: 300px) {
     .card-columns {
         column-count: 1;
         text-align: center;
+    }
+    .one{
+      position: relative;
+      top:0;
+      left:0;
+      z-index: 1;
+    }
+    .one1{
+      position:absolute;
+      top: -30px;
+      right:120px;
+      z-index: 2;
+    }
+    .two{
+      position: relative;
+      top:0;
+      left:0;
+      z-index: 1;
+    }
+    .two2{
+      position:absolute;
+      top: -30px;
+      right:120px;
+      z-index: 2;
     }
 }
 
@@ -209,10 +248,34 @@ img {
 #project2{
    background-color: #757257;
 }
-
-
+/*.one{
+  position: relative;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.one1{
+  position:absolute;
+  top: -30px;
+  right:170px;
+  z-index: 2;
+}
+.two{
+  position: relative;
+  top:0;
+  left:0;
+  z-index: 1;
+}
+.two2{
+  position:absolute;
+  top: -30px;
+  right:170px;
+  z-index: 2;
+}
+*/
 .card:hover .overlay {
   opacity: 1;
+  z-index: 1;
 }
 .text {
   color: white;
