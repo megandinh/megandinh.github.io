@@ -12,6 +12,7 @@ a #alink {
 }
 .lead{
   font-size: 22px;
+  /*font-family: 'Cutive Mono', monospace;*/
 }
 h1 {
 	/*font-size: 7vw;*/
@@ -30,7 +31,7 @@ a:link{
     text-decoration: none;
 }
 .button{
-  background-color: #FFFFFF; /* Green */
+  background-color: transparent; /* Green */
   border: none;
   color: black;
   padding: 15px 32px;
@@ -90,6 +91,7 @@ p {
     /*font-family: 'Gochi Hand', cursive;*/
     /*font-family: 'Nanum Pen Script', cursive;*/
     font-family: 'Gamja Flower', cursive;
+    /*font-family: 'Cutive Mono', monospace;*/
     /*font-family: 'Allura', cursive;*/
     font-size: 40px;
 }
@@ -220,6 +222,13 @@ img {
       top: -30px;
       right:120px;
       z-index: 2;
+    }
+    .portrait{
+      float:none;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 80%;
     }
 }
 
