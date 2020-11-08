@@ -1,5 +1,6 @@
 *{
   font-family:'Montserrat', sans-serif;
+  cursor: url(../images/cursor.png), auto;
   /*font-family: 'Cutive Mono', monospace;*/
 
 }
@@ -9,15 +10,29 @@ a{
 a #alink {
   color: black;
 }
+
 .nav-link a:hover{
-  color:#a893bd;
+  color:#BCA3AC;
+  cursor: url(../images/cursor.png), auto;
 }
-.lead{
-  font-size: 30px;
-  padding-top: 10px; 
-  font-family: 'Cutive Mono', 
-  monospace; color:#404040;
+.navbar-brand a:hover{
+  color:black;
+}
+.lead, .lead span, .lead p{
+  /*text-align: left;*/
+  font-size: 20px;
+/*  padding-top: 10px; 
+*/  font-family: 'DM Mono', monospace; 
+    color:#404040;
   /*font-family: 'Cutive Mono', monospace;*/
+}
+.lead a{
+    font-size: 19px;
+    font-family: 'DM Mono', monospace; 
+    color:#404040;
+}
+.lead a:hover{
+  color: #BCA3AC;
 }
 /*.kit{
     font-family: 'Cutive Mono', monospace;
@@ -36,7 +51,7 @@ footer{
   text-align: center;
 }
 hr.dotted {
-  border-top: 3px dotted #a893bd;
+  border-top: 3px dotted #BCA3AC;
 }
 a:link{
     color:black;
@@ -62,17 +77,18 @@ a:link{
     display: block;
     width: 0;
     height: 2px;
-    background: #a893bd;
+    background: #BCA3AC;
     transition: width .3s;
 }
 
 .button:hover::after, .nav-link:hover::after{
     width: 100%;
+    cursor: url(../images/cursor.png), auto;
 }
 .dot {
   height: 60px;
   width: 60px;
-  background-color: #a893bd;
+  background-color: #BCA3AC;
   border-radius: 50%;
   display: inline-block;
   margin-right: 20px;
@@ -115,17 +131,43 @@ p {
 .navbar-brand{
     /*font-family: 'Gochi Hand', cursive;*/
     /*font-family: 'Nanum Pen Script', cursive;*/
-    font-family: 'Gamja Flower', cursive;
+    /*font-family: 'Gamja Flower', cursive;*/
+    font-family: 'Alice', serif;
     /*font-family: 'Cutive Mono', monospace;*/
     /*font-family: 'Allura', cursive;*/
     color:#404040;
-    font-size: 40px;
+    font-size: 35px;
+    text-align: center;
+    justify-content: center;
+    display: block;
+    margin-left: -16px;
+    margin-right: -16px;
+    vertical-align: middle;
 }
 .navbars {
-  padding-top: 10px;
+  padding-top: 30px;
+  text-align: center;
+  justify-content: center;
+}
+.nav-item{
+      display: inline-block;
+      list-style-type: none;
+}
+.navbar-nav{
+    list-style-type: none;
+    text-align: center;
+    justify-content: center;
+    vertical-align: middle;
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 .nav-link{
     font-family: 'Montserrat', sans-serif;
+    /*display: inline-block;*/
+   /*list-style-type: none;*/
     /*font-family: 'Cutive Mono', monospace;*/
     /*font-size: 20px;*/
 }
@@ -215,6 +257,18 @@ img {
   .aboutcontent{
     width:70%;
   }
+  .navbar-nav{
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 12px;
+    width: 300px;
+  }
+  .navbar-item{
+    margin-left: 5px;
+  }
+  .navbar-link{
+    margin-left: 5px;
+  }
   /*.two{
     position: relative;
     top:0;
@@ -254,6 +308,18 @@ img {
   .aboutcontent{
     width:100%;
   }
+  .navbar-nav{
+    display: inline-block;
+    justify-content: space-between;
+    font-size: 14px;
+    width: 200px;
+  }
+  .navbar-item{
+    margin-left: 5px;
+  }
+  .navbar-link{
+    margin-left: 5px;
+  }
     /*.two{
       position: relative;
       top:0;
@@ -279,6 +345,34 @@ img {
     .card-columns {
         column-count: 2;
         text-align: center;
+    }
+    .navbars {
+      padding-top: 36px;
+      text-align: center;
+      justify-content: center;
+    }
+    .nav-item{
+          display: inline-block;
+          list-style-type: none;
+    }
+    .navbar-nav{
+        list-style-type: none;
+        text-align: center;
+        justify-content: center;
+        vertical-align: middle;
+        float: none;
+        font-size: 14px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .nav-link{
+        font-family: 'Montserrat', sans-serif;
+        /*display: inline-block;*/
+       /*list-style-type: none;*/
+        /*font-family: 'Cutive Mono', monospace;*/
+        /*font-size: 20px;*/
     }
 }
 .overlay {
