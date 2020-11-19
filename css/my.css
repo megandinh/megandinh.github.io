@@ -259,11 +259,11 @@ img {
     right:100px;
     z-index: 2;
   }
-  .aboutimg{
+  .aboutimg img{
     float:right;
   }
-  .aboutcontent{
-    width:70%;
+  .aboutcontent p{
+    width:60%;
   }
   .navbar-nav{
     display: inline-block;
