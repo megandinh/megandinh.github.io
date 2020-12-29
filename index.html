@@ -58,19 +58,19 @@
 			<div class = "backgrounds">
 				<div class="jumbotron text-center">
 					<div class="lead">
-						<p><span id="time" style="font-size: 12px;"></span></p>
-						<p>
+						<!-- <p><span id="time" style="font-size: 15px;"></span></p> -->
+						<!-- <p>
 							DESIGNER AND DEVELOPER AT UCSD WITH A HIGH THRESHOLD FOR FAILURE
-						</p>
-					<!-- <p>
-				    	Designer and developer at UCSD with a high threshold for failure
-				    </p> -->
-				    <p>
-				    	LEAD STUDENT RESEARCHER @ <a href="https://designlab.ucsd.edu/" target="_blank">THE DESIGN LAB</a> + USER RESEARCHER @ <a href="https://wistly.io/" target="_blank">WISTLY</a>
+						</p> -->
+					<p>
+				    	Designer and developer at UCSD with a high threshold for failure as of <span id="time"></span>
 				    </p>
-					<!-- <p>
-				    	Lead Student Researcher @ <a href="https://designlab.ucsd.edu/" target="_blank">The Design Lab</a> + User Researcher @ <a href="https://wistly.io/" target="_blank">Wistly
-				    	</p> -->
+				    <!-- <p>
+				    	LEAD STUDENT RESEARCHER @ <a href="https://designlab.ucsd.edu/" target="_blank">THE DESIGN LAB</a> + USER RESEARCHER @ <a href="https://wistly.io/" target="_blank">WISTLY</a>
+				    </p> -->
+					<p>
+				    	Lead Student Researcher @ <a href="https://designlab.ucsd.edu/" target="_blank">The Design Lab</a> + User Researcher @ <a href="https://wistly.io/" target="_blank">Wistly</a>
+				    </p>
 				    </div>
 				</div>
 			</div>
@@ -143,12 +143,12 @@
 				<script type="text/javascript">
 					var date = new Date();
 					var months = ["January","February","March","April","May","June","July","August","September","October","November","December"];
-					var thisMonth = months[date.getMonth()];
-				// var thisMonth = date.getMonth()+1;
+					// var thisMonth = months[date.getMonth()];
+				var thisMonth = date.getMonth()+1;
 				var year = date.getFullYear();
 				var day = date.getDate();
-				// var printDate = thisMonth + "." + day + "."+ year;
-				var printDate = day + " " + thisMonth.toUpperCase() + " "+ year;
+				var printDate = thisMonth + "." + day + "."+ year;
+				// var printDate = day + " " + thisMonth.toUpperCase() + " "+ year;
 				document.getElementById("time").innerHTML = printDate;
 
 			</script>
