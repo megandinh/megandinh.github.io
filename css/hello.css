@@ -1,0 +1,198 @@
+body {
+  padding-bottom: 10%;
+}
+.header{
+  font-family: 'Press Start 2P', cursive;
+}
+a{
+  color: black;
+  text-decoration: none;
+}
+a:hover{
+  color: black;
+  text-decoration: none;
+}
+.text{
+  font-family: 'Anonymous Pro', monospace;
+  font-weight: bold;
+}
+.container, .bodytext{
+    padding-left: 10%;
+    padding-right: 10%;
+  }  
+.wraps{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.wraps p,b,span, a, li, dd{
+  font-family: 'Judson', serif;
+}
+.navbars p{
+  margin-bottom: 5px;
+}
+.navbars{
+  padding-top: 10%;
+}
+:root{
+  --surface: #C4C4C4;
+  --button-highlight: #ffffff;
+  --button-face: #dfdfdf;
+  --button-shadow: #808080;
+  --window-frame: #0a0a0a;
+
+  --element-spacing: 8px;
+  /* Borders */
+  --border-width: 1px;
+  --border-raised-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-highlight);
+  --border-raised-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-face);
+  --border-sunken-outer: inset -1px -1px var(--button-highlight),
+    inset 1px 1px var(--window-frame);
+  --border-sunken-inner: inset -2px -2px var(--button-face),
+    inset 2px 2px var(--button-shadow);
+
+  /* Window borders flip button-face and button-highlight */
+  --border-window-outer: inset -1px -1px var(--window-frame),
+    inset 1px 1px var(--button-face);
+  --border-window-inner: inset -2px -2px var(--button-shadow),
+    inset 2px 2px var(--button-highlight);
+
+  /* Field borders (checkbox, input, etc) flip window-frame and button-shadow */
+  --border-field: inset -1px -1px var(--button-highlight),
+    inset 1px 1px var(--button-shadow), inset -2px -2px var(--button-face),
+    inset 2px 2px var(--window-frame);
+}
+.window {
+  box-shadow: var(--border-window-outer), var(--border-window-inner);
+  background: var(--surface);
+  padding: 3px;
+  width: 100%;
+  /*min-height: 150px;*/
+  height: max-content;
+  display: inline-block;
+}
+.title-bar {
+  background: black;
+  padding: 3px 2px 3px 3px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.title-bar-text {
+  /*font-weight: bold; */
+  padding-left: 20px;
+  color: white;
+  letter-spacing: 0;
+  margin-right: 24px;
+}
+.title-bar-controls {
+  display: flex;
+}
+
+.title-bar-controls button {
+  padding: 0;
+  display: block;
+  min-width: 16px;
+  min-height: 14px;
+} 
+
+.icon {
+  padding-right: 20px;
+}
+.window-body {
+  margin: var(--element-spacing);
+  font-size: 17px;
+  padding-left: 10px;
+  padding-top: 10px;
+  min-height: 100px;
+}
+
+.window-body p{
+  padding-top: 5px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+}
+.title-bar-controls button[aria-label="Minimize"] {
+  background-image: url("../images/minimize.svg");
+  background-repeat: no-repeat;
+  background-position: bottom 3px left 4px;
+}
+
+.title-bar-controls button[aria-label="Help"] {
+  background-image: url("../images/help.svg");
+  background-repeat: no-repeat;
+  background-position: top 2px left 5px;
+}
+
+.title-bar-controls button[aria-label="Close"] {
+  margin-left: 2px;
+  background-image: url("../images/close.svg");
+  background-repeat: no-repeat;
+  background-position: top 3px left 4px;
+}
+
+button {
+  box-sizing: border-box;
+  border: none;
+  background: var(--surface);
+  box-shadow: var(--border-raised-outer), var(--border-raised-inner);
+  border-radius: 0;
+
+  min-width: 75px;
+  min-height: 23px;
+  padding: 0 12px;
+
+  font-family: 'Anonymous Pro', monospace;
+}
+.button-group button{
+  margin-top: 0px;
+  margin-left: 10px;
+}
+.item1 { grid-area: image; }
+.item2 { grid-area: about1; }
+.item3 { grid-area: about2; }
+
+  @media (min-width: 300px) {
+    .grid-container {
+    display: grid;
+    grid-template-areas:
+      'image image image image image image'
+      'about1 about1 about1 about1 about1 about1'
+      'about2 about2 about2 about2 about2 about2';
+    grid-gap: 10px;
+    padding: 10px;
+  }
+}
+@media(min-width: 1000px){
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'image image about1 about1 about1 about1'
+    'image image about2 about2 about2 about2';
+  grid-gap: 10px;
+  padding: 10px;
+  }
+}
+
+.loading:after {
+  overflow: hidden;
+  display: inline-block;
+  vertical-align: bottom;
+  -webkit-animation: ellipsis steps(4,end) 900ms infinite;      
+  animation: ellipsis steps(4,end) 3000ms infinite;
+  content: "\2026"; /* ascii code for the ellipsis character */
+  width: 0px;
+}
+
+@keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
+
+@-webkit-keyframes ellipsis {
+  to {
+    width: 1.25em;    
+  }
+}
