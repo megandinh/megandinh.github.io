@@ -146,7 +146,14 @@
 		</div>
 	<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
 	</div>
-
+<script>
+	$("img").mousedown(function (e){
+		e.preventDefault();
+	});
+	$("img").on("contextmenu",function(e){
+		return false;
+	});
+</script>
 
 				
 </body>
