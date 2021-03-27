@@ -215,8 +215,13 @@ a:hover{
     margin-top: 0px;
     margin-left: 10px;
     cursor: url(../images/cursor.svg), auto;
+    /*font-size: 3vw;*/
 
   }
+  .button-group{
+    vertical-align: bottom;
+  }
+
   .item2 .window, .item3 .window{
     height: 100%;
   }
@@ -285,7 +290,16 @@ a:hover{
       /*grid-gap: 10px;*/
       padding: 10px;
     }
+     .links{
+    font-size: 1.5vw;
   }
+  }
+
+    @media (min-width: 1240px) {
+      .links{
+        margin-top: 3%;
+      }
+    }
 
   .loading:after {
     overflow: hidden;
