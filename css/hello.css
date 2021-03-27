@@ -259,7 +259,7 @@ a:hover{
       'work5'
       'work6'
       ;
-      /*grid-gap: 10px;*/
+      grid-gap: 3vw;
       padding: 10px;
     }
 
