@@ -213,9 +213,12 @@ a:hover{
   }
   .button-group button{
     margin-top: 0px;
-    margin-left: 5px;
+    margin-left: 10px;
     cursor: url(../images/cursor.svg), auto;
 
+  }
+  .item2 .window, .item3 .window{
+    height: 100%;
   }
   .work-grid{
     grid-auto-flow: column;
