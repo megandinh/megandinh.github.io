@@ -5,31 +5,55 @@
 	<meta name="google-site-verification" content="zfh_cmI7skL9YaWpsDOEwkFqD_epwRU9IUtMCZL6kZA" />
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/hello.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Montserrat:wght@500|Allura|Gochi+Hand|Nanum+Pen+Script|Gamja+Flower|Rozha+One|DM+Mono|Alice" rel="stylesheet">	 -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
-	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Nunito+Sans:wght@600;800&family=Press+Start+2P&display=swap" rel="stylesheet">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-	<title>Coming Soon</title>
+	<title>Megan Dinh - Coming Soon</title>
 	<link rel="icon" 
 	type="image/png" 
 	href="images/favicon.png"/>
+	<style>
+		body{
+			background-color: #BDCDDC;
+			background-size: 40px 40px;
+			background-image: radial-gradient(circle, #FFFFFF 1px, rgba(0, 0, 0, 0) 1px);
+		}
+	</style>
 </head>
 <body>
-	<div class="container">
-		<!-- Navbar -->
-		<div class="navbars">
-			<p><a class="header" href="index.html">megan dinh</a></p>
-			<p><a class="header" href="welcome.html">welcome</a></p>
-			<p><a class="header" href="memoir.html">wisdom</a></p>
-			<p><a class="header" href="index.html">>work</a></p>
+	<div class="window special" style=" min-height:100vh;">
+		<div class="title-bar">
+			<a href="index.html"><div class="title-bar-text header"><img src='images/heart.svg' style='width:3vw; height: auto; margin-right: 1.5vw; padding-bottom: .25vw' >work in progress from megan dinh</div></a>
+			<div class="title-bar-controls">
+				<a href="index.html"><button aria-label="Welcome" class="wel"></button></a>
+				<a href="wisdom.html"><button aria-label="Wisdom" class="wis"></button></a>
+				<a href="work.html"><button aria-label="Work" class="wor"></button></a>
+			</div>
 		</div>
-		<br>
-		<br>
-		<p class="header loading" style="font-size: 10vw">Coming Soon</p>
-		<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
+		<div style="padding: 5.5%;">
+			<div class="window-body text">
+				<p class="header loading" style="font-size: 10vw">Coming Soon</p>
+				<div style="margin: 6%"></div>
+				<div class="button-group">
+					<button onclick="goBack()"style="font-size: 3vw;">Back to Work</button>
+				</div>
+			</div>
+		</div>			
 	</div>
+	<script>
+		$("img").mousedown(function (e){
+			e.preventDefault();
+		});
+		$("img").on("contextmenu",function(e){
+			return false;
+		});
+		function goBack() {
+			window.history.back();
+		}
+	</script>
+
+
 </body>
 </html>
-		

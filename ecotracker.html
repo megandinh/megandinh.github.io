@@ -16,6 +16,16 @@
 </head>
 
 <body>
+	<div class="window">
+		<div class="title-bar">
+			<a href="index.html"><div class="title-bar-text header"><img src='images/heart.svg' style='width:3vw; height: auto; margin-right: 1.5vw; padding-bottom: .25vw' >work from megan dinh</div></a>
+			<div class="title-bar-controls">
+				<a href="index.html"><button aria-label="Welcome" class="wel"></button></a>
+				<a href="wisdom.html"><button aria-label="Wisdom" class="wis"></button></a>
+				<a href="work.html"><button aria-label="Work" class="wor"></button></a>
+			</div>
+		</div>
+	</div>
 	<div class="container wraps">
 
 		<!-- <div class="navbars">
@@ -38,86 +48,87 @@
 		
 
 		<div class="bodytext">
-			<div style="padding-top: 10%;">
+			<!-- <div style="padding-top: 10%;">
 			<p style="margin-bottom: 5px;" ><a class="header" href="index.html">megan dinh</a></p>
 			<p style="margin-bottom: 5px;" ><a class="header" href="welcome.html">welcome</a></p>
 			<p style="margin-bottom: 5px;" ><a class="header" href="memoir.html">wisdom</a></p>
 			<p style="margin-bottom: 5px;" ><a class="header" href="index.html">>work</a></p>
-			</div>
-			<br>
-			<h1>eco tracker</h1>
-			<br>
-			
-			<a href="https://a10-eco-tracker.herokuapp.com/">
-				<img src="images/slide.png" class="responsive center">
-			</a>
-			<br>
-			<br>
-			<h2>Overview</h2>
-			<!-- <p class="bold" id="alink" style="font-size: 2vw; text-align: center;"><a href="https://a10-eco-tracker.herokuapp.com/">eco tracker</a> -->
-				<p><span style="display: block"><b>Scope</b>   <span style="background-color: #84d984">User Research</span>   <span style="background-color: #84d984">UI/UX Design</span>   <span style="background-color: #84d984">Full-Stack Development</span></span>
-					<span style="display: block"> <b>Tools</b>  <span style="background-color: #addbad">Figma</span>   <span style="background-color: #addbad">Google Analytics</span> <span style="background-color: #addbad">Node.js</span> </span>
-					<span style="display: block"><b>Team</b>  Megan Dinh, Brendan Jew, Tatum Maston, Aaron Truong</span>
-					<span style="display: block">This app was created for COGS 120: Interactive Design, taught by Scott Klemmer at UCSD.</span></p>
+		</div> -->
 
-					<p><a style="color:#6ab86a" href="https://a10-eco-tracker.herokuapp.com/">eco tracker</a> is an app that motivates people to track their daily commute, food, and waste data by quantifying their data into emission summaries that communicate a person’s progress towards their personal eco goals. 
-					</p>
-					<br>
-					<h2>Background</h2>
-					<p>Global warming. Pollution. Wildfires. The severity of environmental issues is continuously escalating with the current interactions between people and the environment. Most people are equipped with “Reduce, Reuse, and Recycle” in their arsenal, but where do they go from there? Starting the transition to a more eco-friendly lifestyle can be challenging.</p>
-					<p>Suppose someone decides to ride their bike to work instead of driving. It’s a fairly simple substitute that can be implemented immediately. There are also the incentives to reduce carbon emissions and save money. However, a week goes by, but they are unsure of how much carbon emissions they reduced. “Did I even reduce my carbon footprint? What’s the point of riding my bike if it seems like no one else is saving the environment?” The transition to a more eco-friendly lifestyle can be challenging because people can lose motivation if they do not have a tangible way of seeing their progress towards their goals.</p>
-					<br>
-					<h2>Problem Statement</h2>
-					<br>
-					<p>People who are trying to reduce their carbon footprint need to find ways to implement eco-friendly habits and reflect on their progress, but <b>the motivation to maintain these habits can dissipate</b> if they cannot determine whether they are making a difference or not.
-					</p>
-					<br>
-					<h2>Needfinding</h2>
-					<p>We first explored the current options for our targeted audience to determine how we can address the current gaps. Listed below are four apps that are typically used in relation to tracking carbon footprints or helping the environment.
-					</p>
-					<ul style="padding: 5px 50px 10px;"> 
-						<li><a style="color:#6ab86a" href="http://www.hashtagclimate.org/">#climate</a> is a social platform that <b>suggests actions based on the user’s interest</b> and encourages users to share these actions to social media.
-						</li>
-						<li><a style="color:#6ab86a" href="https://www.carbonfootprint.com/calculator.aspx">Carbonfootprint.com</a> <b>alculates carbon emissions based on user input</b> from various categories such as commute and utilities.
-						</li>
-						<li><a style="color:#6ab86a" href="https://docs.google.com/spreadsheets/">Google Sheets</a> can <b>track innumerable logs of data</b>, and the user can apply formulas to calculate carbon emissions.
-						</li>
-						<li><a style="color:#6ab86a" href="https://www.dropcountr.com/">Dropcountr</a> provides <b>daily, monthly, and yearly trend summaries</b> of one’s water usage and allows the user to budget water usage accordingly.
-						</li>
-					</ul>
-					<img src="images/needfind.png" class="responsive center">
-					<p>With all of this to consider, we wanted to create a mobile interface that is accessible to anyone who wants to pursue an eco-friendly lifestyle. <b>Accessibility</b> and <b>ease of use</b> is <b>important for us</b> because beginners to eco-friendly lifestyles might avoid apps that require several complex steps. Also, given the specialization of each app, there is <b>no app that centralizes all of these features</b>. This means that one might <b>need to consult with multiple apps to track</b> their progress, which can be time consuming and <b>demotivating</b>. 
-					</p>
-					<p>An eco-friendly lifestyle is a commitment, but it shouldn’t be a burdensome <b>time commitment</b>. We sought to find a way to merge the features of these resources to <b>create an app that centralizes key actions</b> - log data, receive daily reports, visualize quantified data, learn ways to reduce carbon emissions.
-					</p>
-					<br>
-					<h2>User Personas</h2>
-					<p>After consolidating the data from user research, we created two personas to <b>solidify the core motivations and frustrations</b> for people who are trying to reduce their carbon footprint. We believe that <b>these personas reflect our problem statement and findings</b> because the process of reducing one’s carbon footprint can feel like a tedious commitment, regardless of experience or interest with it.
-					</p>
-					<img src="images/persona.png" class="responsive center">
-					<br>
-					<h2>Storyboards</h2>
-					<p>With the key motivations and frustrations of our targeted audience pinpointed, we created two storyboards to further explore where our potential app could be integrated within the user’s course of action. </p>
-					<p class="bold text-center" style="font-size: 25px">Storyboard 1: Beginning an eco-friendly lifestyle
-					</p>
-					<img src="images/storyboard2.jpg" class="responsive center"  style="outline: black solid 3px">
-					<p style="padding: 15px 30px 10px;">This storyboard <b>focuses more on the beginner</b> with little knowledge of carbon footprints, but another critical part to motivating the user would be to <b>optimize</b> the way that the user records and tracks their data or progress towards their goals. 
-					</p>
-					<p class="bold text-center" style="font-size: 25px">Storyboard 2: Maintaining an eco-friendly lifestyle
-					</p>
-					<img src="images/storyboard1.jpg" class="responsive center"  style="outline: black solid 3px">
-					<p style="padding: 15px 30px 10px;">This storyboard<b> focuses on reducing the time</b> to log data and see trends in data. This should <b>motivate users like Jim</b> to track meals more often because it feels less like a chore. He can also gain insights about his eco-habits that he may not have noticed from simply logging his data into a spreadsheet.
-					</p>
-					<br>
-					<h2>Paper Prototypes</h2>
-					<p>Storyboards aside, my team and I continued working with paper to create two different low-fidelity prototypes that offered <b>key features like creating goals, tracking data, viewing tips, and receiving a daily summary of carbon emissions</b>. These features were intended to motivate the user to maintain their eco-friendly habits by <b>letting them focus on logging their data</b>, while <b>the app would explain</b> what their data means <b>and visualize their progress</b> towards their goals. </p>
-					<p>At this stage of the design process, we wanted to focus on how we could facilitate the interactions between the user and the app. To test this, we conducted multiple heuristic evaluations with users.</p>
-					<p class="bold text-center" style="font-size: 25px">Prototype A: Focus on Logging and Emission Summaries</p>
-					<img src="images/pp1.png" class="responsive center">
-					<p style="padding: 15px 30px 10px;">The interface of this prototype organizes features with five different tabs on a navigation bar. This prototype <b>encourages people to log commute data</b> by providing options to input the mode of transportation and number of miles traveled. There are also <b>daily and monthly emission summaries</b> that help users understand their data over a span of time.</p>
-					<p style="padding: 0px 30px 10px;">Prototype A is best suited for <b>users like Jim</b> (one of our personas) who might struggle to visualize their data and need a way to see patterns in their behavior. This prototype provides the breakdown of a user’s carbon emission based on the available categories: commute, food, energy, and waste. The monthly summary also visualizes the trends in carbon emissions for a user, with varying colors that represent high, medium, and low levels of carbon emissions. </p>
-					<p class="bold text-center" style="font-size: 25px">Prototype B: Focus on Quantifying Data</p>
-					<img src="images/pp2.png" class="responsive center">
+		<br>
+		<h1>eco tracker</h1>
+		<br>
+
+		<a href="https://a10-eco-tracker.herokuapp.com/">
+			<img src="images/slide.png" class="responsive center">
+		</a>
+		<br>
+		<br>
+		<h2>Overview</h2>
+		<!-- <p class="bold" id="alink" style="font-size: 2vw; text-align: center;"><a href="https://a10-eco-tracker.herokuapp.com/">eco tracker</a> -->
+			<p><span style="display: block"><b>Scope</b>   <span style="background-color: #84d984">User Research</span>   <span style="background-color: #84d984">UI/UX Design</span>   <span style="background-color: #84d984">Full-Stack Development</span></span>
+				<span style="display: block"> <b>Tools</b>  <span style="background-color: #addbad">Figma</span>   <span style="background-color: #addbad">Google Analytics</span> <span style="background-color: #addbad">Node.js</span> </span>
+				<span style="display: block"><b>Team</b>  Megan Dinh, Brendan Jew, Tatum Maston, Aaron Truong</span>
+				<span style="display: block">This app was created for COGS 120: Interactive Design, taught by Scott Klemmer at UCSD.</span></p>
+
+				<p><a style="color:#6ab86a" href="https://a10-eco-tracker.herokuapp.com/">eco tracker</a> is an app that motivates people to track their daily commute, food, and waste data by quantifying their data into emission summaries that communicate a person’s progress towards their personal eco goals. 
+				</p>
+				<br>
+				<h2>Background</h2>
+				<p>Global warming. Pollution. Wildfires. The severity of environmental issues is continuously escalating with the current interactions between people and the environment. Most people are equipped with “Reduce, Reuse, and Recycle” in their arsenal, but where do they go from there? Starting the transition to a more eco-friendly lifestyle can be challenging.</p>
+				<p>Suppose someone decides to ride their bike to work instead of driving. It’s a fairly simple substitute that can be implemented immediately. There are also the incentives to reduce carbon emissions and save money. However, a week goes by, but they are unsure of how much carbon emissions they reduced. “Did I even reduce my carbon footprint? What’s the point of riding my bike if it seems like no one else is saving the environment?” The transition to a more eco-friendly lifestyle can be challenging because people can lose motivation if they do not have a tangible way of seeing their progress towards their goals.</p>
+				<br>
+				<h2>Problem Statement</h2>
+				<br>
+				<p>People who are trying to reduce their carbon footprint need to find ways to implement eco-friendly habits and reflect on their progress, but <b>the motivation to maintain these habits can dissipate</b> if they cannot determine whether they are making a difference or not.
+				</p>
+				<br>
+				<h2>Needfinding</h2>
+				<p>We first explored the current options for our targeted audience to determine how we can address the current gaps. Listed below are four apps that are typically used in relation to tracking carbon footprints or helping the environment.
+				</p>
+				<ul style="padding: 5px 50px 10px;"> 
+					<li><a style="color:#6ab86a" href="http://www.hashtagclimate.org/">#climate</a> is a social platform that <b>suggests actions based on the user’s interest</b> and encourages users to share these actions to social media.
+					</li>
+					<li><a style="color:#6ab86a" href="https://www.carbonfootprint.com/calculator.aspx">Carbonfootprint.com</a> <b>alculates carbon emissions based on user input</b> from various categories such as commute and utilities.
+					</li>
+					<li><a style="color:#6ab86a" href="https://docs.google.com/spreadsheets/">Google Sheets</a> can <b>track innumerable logs of data</b>, and the user can apply formulas to calculate carbon emissions.
+					</li>
+					<li><a style="color:#6ab86a" href="https://www.dropcountr.com/">Dropcountr</a> provides <b>daily, monthly, and yearly trend summaries</b> of one’s water usage and allows the user to budget water usage accordingly.
+					</li>
+				</ul>
+				<img src="images/needfind.png" class="responsive center">
+				<p>With all of this to consider, we wanted to create a mobile interface that is accessible to anyone who wants to pursue an eco-friendly lifestyle. <b>Accessibility</b> and <b>ease of use</b> is <b>important for us</b> because beginners to eco-friendly lifestyles might avoid apps that require several complex steps. Also, given the specialization of each app, there is <b>no app that centralizes all of these features</b>. This means that one might <b>need to consult with multiple apps to track</b> their progress, which can be time consuming and <b>demotivating</b>. 
+				</p>
+				<p>An eco-friendly lifestyle is a commitment, but it shouldn’t be a burdensome <b>time commitment</b>. We sought to find a way to merge the features of these resources to <b>create an app that centralizes key actions</b> - log data, receive daily reports, visualize quantified data, learn ways to reduce carbon emissions.
+				</p>
+				<br>
+				<h2>User Personas</h2>
+				<p>After consolidating the data from user research, we created two personas to <b>solidify the core motivations and frustrations</b> for people who are trying to reduce their carbon footprint. We believe that <b>these personas reflect our problem statement and findings</b> because the process of reducing one’s carbon footprint can feel like a tedious commitment, regardless of experience or interest with it.
+				</p>
+				<img src="images/persona.png" class="responsive center">
+				<br>
+				<h2>Storyboards</h2>
+				<p>With the key motivations and frustrations of our targeted audience pinpointed, we created two storyboards to further explore where our potential app could be integrated within the user’s course of action. </p>
+				<p class="bold text-center" style="font-size: 25px">Storyboard 1: Beginning an eco-friendly lifestyle
+				</p>
+				<img src="images/storyboard2.jpg" class="responsive center"  style="outline: black solid 3px">
+				<p style="padding: 15px 30px 10px;">This storyboard <b>focuses more on the beginner</b> with little knowledge of carbon footprints, but another critical part to motivating the user would be to <b>optimize</b> the way that the user records and tracks their data or progress towards their goals. 
+				</p>
+				<p class="bold text-center" style="font-size: 25px">Storyboard 2: Maintaining an eco-friendly lifestyle
+				</p>
+				<img src="images/storyboard1.jpg" class="responsive center"  style="outline: black solid 3px">
+				<p style="padding: 15px 30px 10px;">This storyboard<b> focuses on reducing the time</b> to log data and see trends in data. This should <b>motivate users like Jim</b> to track meals more often because it feels less like a chore. He can also gain insights about his eco-habits that he may not have noticed from simply logging his data into a spreadsheet.
+				</p>
+				<br>
+				<h2>Paper Prototypes</h2>
+				<p>Storyboards aside, my team and I continued working with paper to create two different low-fidelity prototypes that offered <b>key features like creating goals, tracking data, viewing tips, and receiving a daily summary of carbon emissions</b>. These features were intended to motivate the user to maintain their eco-friendly habits by <b>letting them focus on logging their data</b>, while <b>the app would explain</b> what their data means <b>and visualize their progress</b> towards their goals. </p>
+				<p>At this stage of the design process, we wanted to focus on how we could facilitate the interactions between the user and the app. To test this, we conducted multiple heuristic evaluations with users.</p>
+				<p class="bold text-center" style="font-size: 25px">Prototype A: Focus on Logging and Emission Summaries</p>
+				<img src="images/pp1.png" class="responsive center">
+				<p style="padding: 15px 30px 10px;">The interface of this prototype organizes features with five different tabs on a navigation bar. This prototype <b>encourages people to log commute data</b> by providing options to input the mode of transportation and number of miles traveled. There are also <b>daily and monthly emission summaries</b> that help users understand their data over a span of time.</p>
+				<p style="padding: 0px 30px 10px;">Prototype A is best suited for <b>users like Jim</b> (one of our personas) who might struggle to visualize their data and need a way to see patterns in their behavior. This prototype provides the breakdown of a user’s carbon emission based on the available categories: commute, food, energy, and waste. The monthly summary also visualizes the trends in carbon emissions for a user, with varying colors that represent high, medium, and low levels of carbon emissions. </p>
+				<p class="bold text-center" style="font-size: 25px">Prototype B: Focus on Quantifying Data</p>
+				<img src="images/pp2.png" class="responsive center">
 				<!-- <div class="row">
 					<div class="column">
 						<img src="images/pp2.jpg" class="responsive center">
@@ -237,17 +248,17 @@
 				<br>
 				<br>
 			</div>	 -->	
-				<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
-	
+			<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
+
 		</div>
-<script>
-	$("img").mousedown(function (e){
-		e.preventDefault();
-	});
-	$("img").on("contextmenu",function(e){
-		return false;
-	});
-</script>
+		<script>
+			$("img").mousedown(function (e){
+				e.preventDefault();
+			});
+			$("img").on("contextmenu",function(e){
+				return false;
+			});
+		</script>
 	</body>
 	</html>
 	
