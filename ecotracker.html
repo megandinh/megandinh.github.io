@@ -3,9 +3,9 @@
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
-	<link rel="stylesheet" href="css/my.css">
+	<!-- <link rel="stylesheet" href="css/my.css"> -->
 	<link rel="stylesheet" href="css/hello.css">
-	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Judson&family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">	
+	<link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@700&family=Nunito+Sans:wght@600;800&family=Judson&family=Montserrat&family=Press+Start+2P&display=swap" rel="stylesheet">	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -13,6 +13,11 @@
 	<link rel="icon" 
 	type="image/png" 
 	href="images/favicon.png"/>
+	<style>
+    body{
+      background-color: #BDCDDC;
+    }
+  </style>
 </head>
 
 <body>
@@ -26,7 +31,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="container wraps">
+	<div style="padding: 10% 17% 10% 17%">
 
 		<!-- <div class="navbars">
 			<a class="navbar-brand" href="index.html">Megan Dinh</a>
@@ -56,7 +61,7 @@
 		</div> -->
 
 		<br>
-		<h1>eco tracker</h1>
+		<h1 style="font-size: 2.5vw;">eco tracker</h1>
 		<br>
 
 		<a href="https://a10-eco-tracker.herokuapp.com/">
@@ -97,6 +102,7 @@
 					</li>
 				</ul>
 				<img src="images/needfind.png" class="responsive center">
+				<br>
 				<p>With all of this to consider, we wanted to create a mobile interface that is accessible to anyone who wants to pursue an eco-friendly lifestyle. <b>Accessibility</b> and <b>ease of use</b> is <b>important for us</b> because beginners to eco-friendly lifestyles might avoid apps that require several complex steps. Also, given the specialization of each app, there is <b>no app that centralizes all of these features</b>. This means that one might <b>need to consult with multiple apps to track</b> their progress, which can be time consuming and <b>demotivating</b>. 
 				</p>
 				<p>An eco-friendly lifestyle is a commitment, but it shouldn’t be a burdensome <b>time commitment</b>. We sought to find a way to merge the features of these resources to <b>create an app that centralizes key actions</b> - log data, receive daily reports, visualize quantified data, learn ways to reduce carbon emissions.
@@ -112,11 +118,13 @@
 				<p class="bold text-center" style="font-size: 25px">Storyboard 1: Beginning an eco-friendly lifestyle
 				</p>
 				<img src="images/storyboard2.jpg" class="responsive center"  style="outline: black solid 3px">
+				<br>
 				<p style="padding: 15px 30px 10px;">This storyboard <b>focuses more on the beginner</b> with little knowledge of carbon footprints, but another critical part to motivating the user would be to <b>optimize</b> the way that the user records and tracks their data or progress towards their goals. 
 				</p>
 				<p class="bold text-center" style="font-size: 25px">Storyboard 2: Maintaining an eco-friendly lifestyle
 				</p>
 				<img src="images/storyboard1.jpg" class="responsive center"  style="outline: black solid 3px">
+				<br>
 				<p style="padding: 15px 30px 10px;">This storyboard<b> focuses on reducing the time</b> to log data and see trends in data. This should <b>motivate users like Jim</b> to track meals more often because it feels less like a chore. He can also gain insights about his eco-habits that he may not have noticed from simply logging his data into a spreadsheet.
 				</p>
 				<br>
@@ -125,10 +133,12 @@
 				<p>At this stage of the design process, we wanted to focus on how we could facilitate the interactions between the user and the app. To test this, we conducted multiple heuristic evaluations with users.</p>
 				<p class="bold text-center" style="font-size: 25px">Prototype A: Focus on Logging and Emission Summaries</p>
 				<img src="images/pp1.png" class="responsive center">
+				<br>
 				<p style="padding: 15px 30px 10px;">The interface of this prototype organizes features with five different tabs on a navigation bar. This prototype <b>encourages people to log commute data</b> by providing options to input the mode of transportation and number of miles traveled. There are also <b>daily and monthly emission summaries</b> that help users understand their data over a span of time.</p>
 				<p style="padding: 0px 30px 10px;">Prototype A is best suited for <b>users like Jim</b> (one of our personas) who might struggle to visualize their data and need a way to see patterns in their behavior. This prototype provides the breakdown of a user’s carbon emission based on the available categories: commute, food, energy, and waste. The monthly summary also visualizes the trends in carbon emissions for a user, with varying colors that represent high, medium, and low levels of carbon emissions. </p>
 				<p class="bold text-center" style="font-size: 25px">Prototype B: Focus on Quantifying Data</p>
 				<img src="images/pp2.png" class="responsive center">
+				<br>
 				<!-- <div class="row">
 					<div class="column">
 						<img src="images/pp2.jpg" class="responsive center">
@@ -147,12 +157,14 @@
 				<h2>Wireframes</h2>
 				<p>Given our feedback from the heuristic evaluations, we decided to <b>remove the option to log energy</b> because we could not find an efficient way for the user to manually track energy. Furthermore, our feedback indicated that there was little interest in tracking energy to begin with. From our paper prototypes, we also redesigned how food and waste data would be logged.</p>
 				<img src="images/wireframe1.png" class="responsive center">
+				<br>
 				<p style="padding: 15px 30px 0px;"><b>Daily Summary (Home Page):</b> Eco-habits are quantified as carbon emissions. The outer circle is color-coded to alert the user of their current score performance.</p>
 				<p style="padding: 0px 30px 0px;"><b>Monthly Summary:</b> A calendar will display past records of daily emissions.
 				</p>
 				<p style="padding: 0px 30px 10px;"><b>Log Data:</b> Contains the main actions that user will take: logging commute, food, and waste data.
 				</p>
 				<img src="images/wireframe2.png" class="responsive center">
+				<br>
 				<p style="padding: 15px 30px 0px;"><b>Log Commute:</b> Input transportation mode and miles traveled</p>
 				<p style="padding: 0px 30px 0px;"><b>Log Food:</b> Input number of times meat is consumed</p>
 				<p style="padding: 0px 30px 0px;"><b>Log Waste:</b> Input number of times single-use plastic is used. We replaced the original option of logging the weight of waste with this new feature because users would have a better recall with single use plastic than weighing waste. 
@@ -170,11 +182,13 @@
 				</ol>
 				<p class="bold text-center" style="font-size: 25px">User Testing #1</p>
 				<img src="images/utest1.jpg" class="responsive center">
+				<br>
 				<p><span style="display: block"><b>Left:</b> Alex accidentally goes to the add page to add a goal rather than going to the goal page. This is a mistake and a clear mental model was not conveyed.</span>
 					<span style="display: block"><b>Right:</b> Alex sees that the circle has changed colors to indicate that his emissions are high. However, he does not feel bad about it and does not feel any urge to fix this score. </span>
 				</p>
 				<p class="bold text-center" style="font-size: 25px">User Testing #2</p>
 				<img src="images/utest2.jpg" class="responsive center">
+				<br>
 				<p><span style="display: block"><b>Left:</b> This is the tips screen after attempting to scroll down to the bottom. Without placing and holding your finger down on the page, John is unable to see the rest of the elements on the bottom of the page. </span>
 					<span style="display: block"><b>Right:</b> John is sliding his finger from left to right across the page in order to recover from the mistake he made when pressing the incorrect icon. Because there is no obvious back button, he spent some time confused on how to return to the add page.</span>
 				</p>
@@ -204,6 +218,7 @@
 				<br>
 				<h2>Before and After: Redesigns</h2>
 				<img src="images/redesign1.png" class="responsive center" style="width:80%">
+				<br>
 				<ol> 
 					<li><b>(?) buttons</b></li>
 					<dd>- These buttons were implemented to improve the help and documentation of the summary page. When opened, it will inform the user about how they compare to the global emission average and how each category was calculated.</dd>
@@ -215,6 +230,7 @@
 					<dd>- Feedback from user testing revealed that users have <b>no interest in the profile page</b>, and we agreed to omit this page because it did not help with motivating the user and was limited in functionality. The <b>icon of the summary page</b> was changed from a footprint to a page report because users found the footprint ambiguous. It represented a carbon footprint, but carbon footprints are not really mentioned in the app as much as carbon emissions. We figured that a page report would align more with the function of the summary page.</dd>
 				</ol>
 				<img src="images/redesign2.png" class="responsive center" style="width:80%">
+				<br>
 				<ol> 
 					<li><b>Title of Page</b></li>
 					<dd>- The name of the data being recorded was placed at the top of the page to remind users of what they are logging.</dd>
@@ -248,8 +264,8 @@
 				<br>
 				<br>
 			</div>	 -->	
-			<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
-
+<!-- 			<p class="header" style="font-size: 14px; margin-top: 70px; margin-bottom: -70px">made by megan ♡</p>
+ -->
 		</div>
 		<script>
 			$("img").mousedown(function (e){
