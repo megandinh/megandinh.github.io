@@ -20,6 +20,14 @@ a:hover{
   color: black;
   text-decoration: none;
 }
+p a{
+    font-family: 'Press Start 2P', cursive;
+}
+#uline:hover {
+  text-decoration: underline;
+/*  background-color: black;
+  color: white;*/
+}
 .text{
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
@@ -99,6 +107,11 @@ strong,  .bodytext b{
   background-image:
   linear-gradient(to right, #F6f6f6 1px, transparent 1px),
   linear-gradient(to bottom, #F6f6f6 1px, transparent 1px);
+}
+.navbarsticky{
+  position: -webkit-sticky; /* Safari */
+  position: sticky;
+  top: 0;
 }
 .title-bar {
   background: #7294B4;
