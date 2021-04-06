@@ -20,6 +20,12 @@ a:hover{
   color: black;
   text-decoration: none;
 }
+#workbutton:hover{
+  cursor: url(../images/workw.svg), auto;
+}
+#wisdombutton:hover{
+  cursor: url(../images/wisdomw.svg), auto;
+}
 p a{
     font-family: 'Press Start 2P', cursive;
 }
@@ -165,17 +171,6 @@ strong,  .bodytext b{
     padding-top: 5px;
     margin-left: 10px;
     margin-bottom: 3px;
-  }
-  .title-bar-controls button[aria-label="Minimize"] {
-    background-image: url("../images/minimize.svg");
-    background-repeat: no-repeat;
-    background-position: bottom 3px left 4px;
-  }
-
-  .title-bar-controls button[aria-label="Help"] {
-    background-image: url("../images/help.svg");
-    background-repeat: no-repeat;
-    background-position: top 2px left 5px;
   }
 
   .title-bar-controls button[aria-label="Close"] {
