@@ -10,7 +10,7 @@ body {
 h2{
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
-  font-size: 2vw;
+  font-size: calc(3px + 2vw);
 }
 a{
   color: black;
@@ -31,12 +31,12 @@ p a{
 .text{
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
-  font-size: 1.5vw
+  font-size: calc(3px + 1.5vw);
 }
 .text span, .text b{
   font-family: 'Anonymous Pro', monospace;
   font-weight: bold;
-  font-size: 1.5vw
+  font-size: calc(3px + 1.5vw);
 }
 
 .details p, .bodytext p, .bodytext span, .bodytext a, .bodytext li, .bodytext dd{
