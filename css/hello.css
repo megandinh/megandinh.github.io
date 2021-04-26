@@ -114,6 +114,7 @@ strong,  .bodytext b{
   linear-gradient(to right, #F6f6f6 1px, transparent 1px),
   linear-gradient(to bottom, #F6f6f6 1px, transparent 1px);
 }
+
 .navbarsticky{
   position: -webkit-sticky; /* Safari */
   position: sticky;
