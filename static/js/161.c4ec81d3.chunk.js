@@ -1,2 +1,0 @@
-"use strict";(self.webpackChunkmy_app=self.webpackChunkmy_app||[]).push([[161],{161:function(i,e,s){s.r(e);s(791);var n=s(87),a=(s(508),s(184));e.default=function(i){return(0,a.jsxs)("div",{className:"caseify",children:[(0,a.jsx)(n.rU,{to:"/",id:"b1",children:"(back)"}),(0,a.jsx)("div",{children:" "}),(0,a.jsxs)("div",{id:"para",children:[(0,a.jsx)("div",{id:"t",children:"Vietnamese American Imaginaries Art Exhibit 2024"}),(0,a.jsx)("div",{id:"casetext",children:"Coming soon!"})]})]})}}}]);
-//# sourceMappingURL=161.c4ec81d3.chunk.js.map
